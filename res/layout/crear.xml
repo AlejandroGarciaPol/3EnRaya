@@ -1,0 +1,107 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/Crear"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#40FF00"
+            android:textSize="48dp"
+            android:textStyle="normal" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/nombreLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Nombre"
+                    android:layout_marginLeft="16dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#40FF00"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/alias"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/vacio" >
+
+                </EditText>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/partidaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/NombrePartida"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#40FF00"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20dp" />
+
+               <EditText
+                    android:id="@+id/nombreEdit"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/vacio" >
+                </EditText>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/VerIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/Verip"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/crear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/BotonCrear" />
+
+    </LinearLayout>

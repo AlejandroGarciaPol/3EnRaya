@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">3EnRaya</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">3EnRaya</string>
+    <string name="vacio"></string>
+    <string name="turno">Turno </string>
+    <string name="again">Jugar de nuevo </string>
+    <string name="turno_def">X</string>
+    <string name="X">X:</string>
+    <string name="O">O:</string>
+    <string name="contador_def">0</string>
+    <string name="titulo">3EnRaya</string>
+    <string name="Nueva_Partida">Nueva Partida</string>
+    <string name="Multijugador">Multijugador</string>
+    <string name="Online">Online</string>
+    <string name="Salir">Salir</string>
+    <string name="Buscar">Buscar partidas</string>
+    <string name="Crear">Crear partida</string>
+    <string name="Atras">Menu principal</string>
+    <string name="Nombre">Alias</string>
+    <string name="NombrePartida">Partida</string>
+    <string name="BotonCrear">Crear</string>
+    <string name="Jugador1">Jugador1</string>
+    <string name="Jugador2">Jugador2</string>
+    <string name="Esperando">Esperando..</string>
+    <string name="Empezar">Comenzar partida</string>
+    <string name="Servidor">Servidor</string>
+    <string name="ip">Ip del servidor</string>
+    <string name="Verip">Ver ip</string>
+    <string name="TuIp">Tu ip es:</string>
+    <string name="title_activity_acerca">Acerca</string>
+    <string name="Acerca">Acerca de</string>
+    <string name="Gana">Gana!</string>
+    <string name="NoRepite">No puedes repetir</string>
+    <string name="level">Nivel</string>
+    <string name="score">Puntos</string>
+    <string name="instrucciones">Para pasar cada nivel tendras que ganar tres veces a la maquina
+        						 dependiendo de las veces que te ganen antes de pasar de nivel 
+        						 obtendras una puntuación distinta.
+        						 Cada nivel tiene un numero de vidas o intentos
+        						 si pierdes todas las vidas perderas el juego
+        						 al principio de cada nivel se te mostrara un mensaje
+        						 como este con las vidas que tienes.
+        						 Este es el primer nivel. Tienes 3 vidas.</string>
+    <string name="vidas">Vidas</string>
+    <string name="guardar">Compartelo!</string>
+     <string name="complet">FELICIDADES</string>
+     <string name="complet2">HAS</string>
+     <string name="complet3">COMPLETADO</string>
+     <string name="complet4">EL</string>
+     <string name="complet5">JUEGO</string>
+     <string name="title_activity_instrucciones">Instrucciones</string>
+     <string name="twit">He conseguido</string>
+     <string name="twit2">puntos jugando al 3EnRaya para android, intenta superarme!</string>
+     <string name="twit3">descarga: https://play.google.com/store/apps/developer?id=BBX+Enterprise.</string>
+	 <string name="twitc">puntos jugando al 3EnRaya para android ¡y me he pasado el juego!, intenta superarme!</string>
+    
+
+</resources>

@@ -1,0 +1,52 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/titulo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#40FF00"
+            android:textSize="70dp" />
+
+        <TextView
+            android:id="@+id/acercade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Acerca"
+            android:textColor="#8A0886"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="95dp"
+            android:text="@string/Nueva_Partida"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="95dp"
+            android:text="@string/Multijugador"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="95dp"
+            android:text="@string/Salir"
+            android:textSize="35dp" />
+  
+    </LinearLayout>

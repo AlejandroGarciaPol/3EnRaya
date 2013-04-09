@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Online"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#40FF00"
+            android:textSize="70dp" />
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="82dp"
+            android:text="@string/Buscar"
+            android:layout_marginTop="30dp"
+            android:textSize="33dp" />
+
+        <Button
+            android:id="@+id/crear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="82dp"
+            android:text="@string/Crear"
+            android:textSize="35dp" />
+
+        <Button
+            android:id="@+id/atras"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="82dp"
+            android:text="@string/Atras"
+            android:textSize="35dp" />
+
+    </LinearLayout>

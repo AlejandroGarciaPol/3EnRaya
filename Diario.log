@@ -1,0 +1,6 @@
+[9/4/2013]	El proyecto comienza sobre un estado de 100 horas trabajadas aproximadamente.
+	Consta de un juego de tres en raya con graficos simples, con niveles y puntuaciones
+	(sin guardado ni tabla de puntuaciones) tiene ademas la capacidad de compartir la
+	puntuación obtenida en las redes sociales. Se puede jugar contra otra persona en el 	
+	mismo dispositivo(sin niveles), o contra la cpu que consta de 10 niveles a superar 
+	para finalizar el juego.
