@@ -5,5 +5,8 @@
 	             mismo dispositivo(sin niveles), o contra la cpu que consta de 10 niveles a superar 
 	             para finalizar el juego.
 
-[22/4/2013][2hora] Testeo de la aplicación y comprobación del correcto funcionamiento de todas sus
+[22/4/2013][2horas] Testeo de la aplicación y comprobación del correcto funcionamiento de todas sus
 	              actuales caracteristicas.
+
+[25/4/2013][2horas]Borrado de clases y actividades que eran restos de la versión anterior, producto
+	              de intentos fallidos de realizar la funcion Online.

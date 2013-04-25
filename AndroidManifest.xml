@@ -39,30 +39,6 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.flipone.enrayaversus.Online"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.flipone.enrayaversus.OnlineMenu"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.flipone.enrayaversus.Crear"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.flipone.enrayaversus.Sala"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.flipone.enrayaversus.Buscar"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.flipone.enrayaversus.IP"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="com.flipone.enrayaversus.Acerca"
             android:label="@string/title_activity_acerca"
             android:theme="@android:style/Theme.Dialog" >
@@ -82,9 +58,6 @@
             android:label="@string/title_activity_instrucciones"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
-         <!-- AdMobActivity definition -->
-<activity android:name="com.google.ads.AdActivity"
- android:configChanges= "keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
     </application>
 
 </manifest>
