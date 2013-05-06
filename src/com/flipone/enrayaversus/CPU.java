@@ -3,7 +3,7 @@ package com.flipone.enrayaversus;
 import java.util.Random;
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
+//import android.os.CountDownTimer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -44,13 +44,27 @@ public class CPU extends Activity {
     TextView Level;
     TextView Puntos;
     int vidas = 0;
-
+    Button casillas[];
+    int index = 0;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cpu);
         
-      
+        casillas = new Button[] {
+                (Button)findViewById(R.id.Boton1),
+                (Button)findViewById(R.id.Boton2),
+                (Button)findViewById(R.id.Boton3),
+                //fila2
+                (Button)findViewById(R.id.Boton4),
+                (Button)findViewById(R.id.Boton5),
+                (Button)findViewById(R.id.Boton6),
+                //fila3
+                (Button)findViewById(R.id.Boton7),
+                (Button)findViewById(R.id.Boton8),
+                (Button)findViewById(R.id.Boton9),
+        };
+        /*
         //fila1
         final Button A = (Button)findViewById(R.id.Boton1);
         final Button B = (Button)findViewById(R.id.Boton2);
@@ -63,7 +77,7 @@ public class CPU extends Activity {
         final Button G = (Button)findViewById(R.id.Boton7);
         final Button H = (Button)findViewById(R.id.Boton8);
         final Button I = (Button)findViewById(R.id.Boton9);
-        
+        */
         final TextView ganador = (TextView)findViewById(R.id.textView3);
         final TextView jugador = (TextView)findViewById(R.id.textView2);
         
@@ -115,38 +129,73 @@ public class CPU extends Activity {
         
         alertDialog.show();
 		
-		
-        
-        
-        
-        A.setOnClickListener(new OnClickListener() 
+       for(index=0;index<=casillas.length-1;index++)//CONTROL DE BOTONES UNICO
+       {
+    	   casillas[index].setId(index);
+        casillas[index].setOnClickListener(new OnClickListener() 
         {	
 			@Override
 			public void onClick(View v) {
+				Button b = (Button)v;
 	        	Debe_Contar = true;
 				if(Jugando)
 				{
 				CheckTurno();
+				if(b.getId()==0)
 				esta = "A";
-				if(pinta.equals(A.getText())||A.getText().equals(""))
+				if(b.getId()==1)
+				esta = "B";
+				if(b.getId()==2)
+				esta = "C";
+				if(b.getId()==3)
+				esta = "D";
+				if(b.getId()==4)
+				esta = "E";
+				if(b.getId()==5)
+				esta = "F";
+				if(b.getId()==6)
+				esta = "G";
+				if(b.getId()==7)
+				esta = "H";
+				if(b.getId()==8)
+				esta = "I";
+				if(pinta.equals(b.getText())||b.getText().equals(""))
 				{
-					if(pinta.equals("O") && OUsadas>=3 && A.getText().equals("")||pinta.equals("X") && XUsadas>=3 && A.getText().equals(""))//no devuelve nada cuando tienes las 3 fichas y pulsas un boton vacio
+					if(pinta.equals("O") && OUsadas>=3 && b.getText().equals("")||pinta.equals("X") && XUsadas>=3 && b.getText().equals(""))//no devuelve nada cuando tienes las 3 fichas y pulsas un boton vacio
 					{	
 						return;
 					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,A,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,A);
+				PintaLlena(casillas[0],casillas[1],casillas[2],casillas[3],casillas[4],casillas[5],casillas[6],casillas[7],casillas[8],again,ganador,b,XWins,OWins);
+				PintaVacia(casillas[0],casillas[1],casillas[2],casillas[3],casillas[4],casillas[5],casillas[6],casillas[7],casillas[8],b);
+				if(b.getId()==0)
 				Ultima("A");
+				if(b.getId()==1)
+				Ultima("B");
+				if(b.getId()==2)
+				Ultima("C");
+				if(b.getId()==3)
+				Ultima("D");
+				if(b.getId()==4)
+				Ultima("E");
+				if(b.getId()==5)
+				Ultima("F");
+				if(b.getId()==6)
+				Ultima("G");
+				if(b.getId()==7)
+				Ultima("H");
+				if(b.getId()==8)
+				Ultima("I");
 				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
+				EnableO(casillas[0],casillas[1],casillas[2],casillas[3],casillas[4],casillas[5],casillas[6],casillas[7],casillas[8]);
+				EnableX(casillas[0],casillas[1],casillas[2],casillas[3],casillas[4],casillas[5],casillas[6],casillas[7],casillas[8]);
 				ChangeTurno(jugador);
 				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,A,XWins,OWins);
+				Cpu(casillas[0],casillas[1],casillas[2],casillas[3],casillas[4],casillas[5],casillas[6],casillas[7],casillas[8],again,ganador,b,XWins,OWins);
 				ChangeTurno(jugador);
 				}
 				}}});
-        
+       }
+       /* ANTIGUOS METODOS ONCLICK(FALTA EL A)
         B.setOnClickListener(new OnClickListener() 
         {	
 			@Override
@@ -363,28 +412,16 @@ public class CPU extends Activity {
 				ChangeTurno(jugador);
 				}
 				}}});
+				*/
         again.setOnClickListener(new OnClickListener() 
         {	
 			@Override
 			public void onClick(View v) {
-				A.setText("");
-				A.setClickable(true);
-				B.setText("");
-				B.setClickable(true);
-				C.setText("");
-				C.setClickable(true);
-				D.setText("");
-				D.setClickable(true);
-				E.setText("");
-				E.setClickable(true);
-				F.setText("");
-				F.setClickable(true);
-				G.setText("");
-				G.setClickable(true);
-				H.setText("");
-				H.setClickable(true);
-				I.setText("");
-				I.setClickable(true);
+				for(int i=0;i<casillas.length;i++)
+				{
+					casillas[i].setText("");
+					casillas[i].setClickable(true);
+				}
 				again.setVisibility(View.INVISIBLE);
 				again.setClickable(false);
 				ganador.setText("");
@@ -1993,42 +2030,13 @@ public class CPU extends Activity {
     {
     	if(XUsadas==3)
     	{
-    	if(A.getText().equals("X"))
-		{
-			A.setClickable(true);
-		}
-		if(B.getText().equals("X"))
-		{
-			B.setClickable(true);
-		}
-		if(C.getText().equals("X"))
-		{
-			C.setClickable(true);
-		}
-		if(D.getText().equals("X"))
-		{
-			D.setClickable(true);
-		}
-		if(E.getText().equals("X"))
-		{
-			E.setClickable(true);
-		}
-		if(F.getText().equals("X"))
-		{
-			F.setClickable(true);
-		}
-		if(G.getText().equals("X"))
-		{
-			G.setClickable(true);
-		}
-		if(H.getText().equals("X"))
-		{
-			H.setClickable(true);
-		}
-		if(I.getText().equals("X"))
-		{
-			I.setClickable(true);
-		}
+    		for(int i=0;i<casillas.length;i++)
+    		{
+    			if(casillas[i].getText().equals("X"))
+    			{
+    				casillas[i].setClickable(true);
+    			}
+    		}
     	}
     
     }

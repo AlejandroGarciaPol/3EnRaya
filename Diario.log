@@ -10,3 +10,6 @@
 
 [25/4/2013][2horas]Borrado de clases y actividades que eran restos de la versión anterior, producto
 	              de intentos fallidos de realizar la funcion Online.
+
+[6/5/2013][5horas]Optimizado del codigo controlador de botones de la clase CPU.Creando un metodo
+	            unico para manejar todos los casos mediante un array de botones.	
