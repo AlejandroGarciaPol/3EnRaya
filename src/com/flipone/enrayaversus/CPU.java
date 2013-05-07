@@ -64,20 +64,6 @@ public class CPU extends Activity {
                 (Button)findViewById(R.id.Boton8),
                 (Button)findViewById(R.id.Boton9),
         };
-        /*
-        //fila1
-        final Button A = (Button)findViewById(R.id.Boton1);
-        final Button B = (Button)findViewById(R.id.Boton2);
-        final Button C = (Button)findViewById(R.id.Boton3);
-        //fila2
-        final Button D = (Button)findViewById(R.id.Boton4);
-        final Button E = (Button)findViewById(R.id.Boton5);
-        final Button F = (Button)findViewById(R.id.Boton6);
-        //fila3
-        final Button G = (Button)findViewById(R.id.Boton7);
-        final Button H = (Button)findViewById(R.id.Boton8);
-        final Button I = (Button)findViewById(R.id.Boton9);
-        */
         final TextView ganador = (TextView)findViewById(R.id.textView3);
         final TextView jugador = (TextView)findViewById(R.id.textView2);
         
@@ -90,31 +76,7 @@ public class CPU extends Activity {
         
         Level = (TextView)findViewById(R.id.textView6);
         Puntos = (TextView)findViewById(R.id.score);
-        /*
-        Context context = getApplicationContext();
-		int duration = Toast.LENGTH_LONG;
-		final Toast insts = Toast.makeText(context,getResources().getString(R.string.instrucciones), duration);
-		insts.show();
 
-		new CountDownTimer(9000, 1000)
-		{
-
-		    public void onTick(long millisUntilFinished) {insts.show();}
-		    public void onFinish() {insts.show();}
-
-		}.start();
-		*/
-        /*
-        new CountDownTimer(1000, 1000)
-		{
-
-		    public void onTick(long millisUntilFinished) {
-		    	}
-		    public void onFinish() {Intent inst = new Intent(CPU.this,Instrucciones.class);startActivity(inst);}
-
-		}.start();
-		*/
-        
         final AlertDialog alertDialog = new AlertDialog.Builder(CPU.this).create();
         
         alertDialog.setTitle("info");
@@ -195,224 +157,6 @@ public class CPU extends Activity {
 				}
 				}}});
        }
-       /* ANTIGUOS METODOS ONCLICK(FALTA EL A)
-        B.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "B";
-				if(pinta.equals(B.getText())||B.getText().equals(""))
-				{	
-					if(pinta.equals("O") && OUsadas>=3 && B.getText().equals("")||pinta.equals("X") && XUsadas>=3 && B.getText().equals(""))
-					{	
-						return;
-					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,B,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,B);
-				Ultima("B");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,B,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        C.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "C";
-				if(pinta.equals(C.getText())||C.getText().equals(""))
-				{	
-					if(pinta.equals("O") && OUsadas>=3 && C.getText().equals("")||pinta.equals("X") && XUsadas>=3 && C.getText().equals(""))
-					{	
-						return;
-					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,C,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,C);
-				Ultima("C");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,C,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        D.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "D";
-				if(pinta.equals(D.getText())||D.getText().equals(""))
-				{
-					if(pinta.equals("O") && OUsadas>=3 && D.getText().equals("")||pinta.equals("X") && XUsadas>=3 && D.getText().equals(""))
-					{	
-						return;
-					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,D,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,D);
-				Ultima("D");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,D,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        E.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "E";
-				if(pinta.equals(E.getText())||E.getText().equals(""))
-				{
-					if(pinta.equals("O") && OUsadas>=3 && E.getText().equals("")||pinta.equals("X") && XUsadas>=3 && E.getText().equals(""))
-					{	
-						return;
-					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,E,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,E);
-				Ultima("E");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,E,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        F.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "F";
-				if(pinta.equals(F.getText())||F.getText().equals(""))
-				{
-					if(pinta.equals("O") && OUsadas>=3 && F.getText().equals("")||pinta.equals("X") && XUsadas>=3 && F.getText().equals(""))
-					{	
-						return;
-					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,F,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,F);
-				Ultima("F");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,F,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        G.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "G";
-				if(pinta.equals(G.getText())||G.getText().equals(""))
-				{
-					if(pinta.equals("O") && OUsadas>=3 && G.getText().equals("")||pinta.equals("X") && XUsadas>=3 && G.getText().equals(""))
-					{	
-						return;
-					}	
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,G,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,G);
-				Ultima("G");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,G,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        H.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "H";
-				if(pinta.equals(H.getText())||H.getText().equals(""))
-				{
-					if(pinta.equals("O") && OUsadas>=3 && H.getText().equals("")||pinta.equals("X") && XUsadas>=3 && H.getText().equals(""))
-					{	
-						return;
-					}	
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,H,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,H);
-				Ultima("H");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,H,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-        I.setOnClickListener(new OnClickListener() 
-        {	
-			@Override
-			public void onClick(View v) {
-	        	Debe_Contar = true;
-				if(Jugando)
-				{
-				CheckTurno();
-				esta = "I";
-				if(pinta.equals(I.getText())||I.getText().equals(""))
-				{
-					if(pinta.equals("O") && OUsadas>=3 && I.getText().equals("")||pinta.equals("X") && XUsadas>=3 && I.getText().equals(""))
-					{	
-						return;
-					}
-				PintaLlena(A,B,C,D,E,F,G,H,I,again,ganador,I,XWins,OWins);
-				PintaVacia(A,B,C,D,E,F,G,H,I,I);
-				Ultima("I");
-				CuentaFichas();
-				EnableO(A,B,C,D,E,F,G,H,I);
-				EnableX(A,B,C,D,E,F,G,H,I);
-				ChangeTurno(jugador);
-				CheckTurno();
-				Cpu(A,B,C,D,E,F,G,H,I,again,ganador,I,XWins,OWins);
-				ChangeTurno(jugador);
-				}
-				}}});
-				*/
         again.setOnClickListener(new OnClickListener() 
         {	
 			@Override
@@ -721,80 +465,18 @@ public class CPU extends Activity {
     }
     public void DisableO(Button A,Button B,Button C,Button D,Button E,Button F,Button G,Button H,Button I)
     {
-    	if(A.getText().equals("O"))
+    	for(int i=0;i<casillas.length;i++)
     	{
-    		A.setClickable(false);
-    	}
-      	if(B.getText().equals("O"))
-    	{
-    		B.setClickable(false);
-    	}
-      	if(C.getText().equals("O"))
-    	{
-    		C.setClickable(false);
-    	}
-      	if(D.getText().equals("O"))
-    	{
-    		D.setClickable(false);
-    	}
-      	if(E.getText().equals("O"))
-    	{
-    		E.setClickable(false);
-    	}
-      	if(F.getText().equals("O"))
-    	{
-    		F.setClickable(false);
-    	}
-      	if(G.getText().equals("O"))
-    	{
-    		G.setClickable(false);
-    	}
-      	if(H.getText().equals("O"))
-    	{
-    		H.setClickable(false);
-    	}
-      	if(I.getText().equals("O"))
-    	{
-    		I.setClickable(false);
+    		if(casillas[i].getText().equals("O"))
+    			casillas[i].setClickable(false);
     	}
     }
     public void DisableX(Button A,Button B,Button C,Button D,Button E,Button F,Button G,Button H,Button I)
     {
-    	if(A.getText().equals("X"))
+    	for(int i=0;i<casillas.length;i++)
     	{
-    		A.setClickable(false);
-    	}
-      	if(B.getText().equals("X"))
-    	{
-    		B.setClickable(false);
-    	}
-      	if(C.getText().equals("X"))
-    	{
-    		C.setClickable(false);
-    	}
-      	if(D.getText().equals("X"))
-    	{
-    		D.setClickable(false);
-    	}
-      	if(E.getText().equals("X"))
-    	{
-    		E.setClickable(false);
-    	}
-      	if(F.getText().equals("X"))
-    	{
-    		F.setClickable(false);
-    	}
-      	if(G.getText().equals("X"))
-    	{
-    		G.setClickable(false);
-    	}
-      	if(H.getText().equals("X"))
-    	{
-    		H.setClickable(false);
-    	}
-      	if(I.getText().equals("X"))
-    	{
-    		I.setClickable(false);
+    		if(casillas[i].getText().equals("X"))
+    			casillas[i].setClickable(false);
     	}
     }
     public void CuentaFichas()//incrementa las variables que cuentan las fichas usadas
@@ -826,55 +508,21 @@ public class CPU extends Activity {
     {
     	if(OUsadas==3)
     	{
-    	if(A.getText().equals("O"))
-		{
-			A.setClickable(true);
-		}
-		if(B.getText().equals("O"))
-		{
-			B.setClickable(true);
-		}
-		if(C.getText().equals("O"))
-		{
-			C.setClickable(true);
-		}
-		if(D.getText().equals("O"))
-		{
-			D.setClickable(true);
-		}
-		if(E.getText().equals("O"))
-		{
-			E.setClickable(true);
-		}
-		if(F.getText().equals("O"))
-		{
-			F.setClickable(true);
-		}
-		if(G.getText().equals("O"))
-		{
-			G.setClickable(true);
-		}
-		if(H.getText().equals("O"))
-		{
-			H.setClickable(true);
-		}
-		if(I.getText().equals("O"))
-		{
-			I.setClickable(true);
-		}
+    		for(int i=0;i<casillas.length;i++)
+    		{
+    			if(casillas[i].getText().equals("O"))
+    			{
+    				casillas[i].setClickable(true);
+    			}
+    		}
     	}
     }
     public void DisableAll(Button A,Button B,Button C,Button D,Button E,Button F,Button G,Button H,Button I)
     {
-    	A.setClickable(false);
-    	B.setClickable(false);
-    	C.setClickable(false);
-    	D.setClickable(false);
-    	E.setClickable(false);
-    	F.setClickable(false);
-    	G.setClickable(false);
-    	H.setClickable(false);
-    	I.setClickable(false);
+    	for(int i=0;i<casillas.length;i++)
+    	{
+    		casillas[i].setClickable(false);
+    	}
     }
     
     public Boolean Asignar(String NombreBoton)
