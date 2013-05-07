@@ -13,3 +13,7 @@
 
 [6/5/2013][5horas]Optimizado del codigo controlador de botones de la clase CPU.Creando un metodo
 	            unico para manejar todos los casos mediante un array de botones.	
+
+[7/5/2013][1hora]Testeo de la opcion CPU, comprobando que hay una carencia en la inteligencia artificial
+					  ya que cuando estan puestas las tres fichas de la CPU, elige cual quitar de forma aleatoria
+					 perdiendo así la estrategia y haciendo que sea muy facil ganar.
