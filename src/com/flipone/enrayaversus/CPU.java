@@ -555,182 +555,621 @@ public class CPU extends Activity {
 			{
 				Log.v("QUITAR FICHA","QUITAR RANDOM");
 				
-				Random random = new Random();
-				int resultado = random.nextInt(2);
-				if(resultado == 0)
-				{
+				int cuenta1 = 0;
+				int cuenta2 = 0;
+				int cuenta3 = 0;
 					if(Pri.equals("A"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,A);
-						Pri = "";
-						quitada = 0;
+						if(B.getText().equals("O"))
+							cuenta1++;
+						if(C.getText().equals("O"))
+							cuenta1++;
+						if(D.getText().equals("O"))
+							cuenta1++;
+						if(G.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(I.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("B"))
-					{	
-						PintaVacia(A,B,C,D,E,F,G,H,I,B);
-						Pri = "";
-						quitada = 1;
+					{
+						if(A.getText().equals("O"))
+							cuenta1++;
+						if(C.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(H.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("C"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,C);
-						Pri = "";
-						quitada = 2;
+						if(B.getText().equals("O"))
+							cuenta1++;
+						if(A.getText().equals("O"))
+							cuenta1++;
+						if(F.getText().equals("O"))
+							cuenta1++;
+						if(I.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(G.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("D"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,D);
-						Pri = "";
-						quitada = 3;
+						if(A.getText().equals("O"))
+							cuenta1++;
+						if(G.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(F.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("E"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,E);
-						Pri = "";
-						quitada = 4;
+						if(A.getText().equals("O"))
+							cuenta1++;
+						if(B.getText().equals("O"))
+							cuenta1++;
+						if(C.getText().equals("O"))
+							cuenta1++;
+						if(D.getText().equals("O"))
+							cuenta1++;
+						if(F.getText().equals("O"))
+							cuenta1++;
+						if(G.getText().equals("O"))
+							cuenta1++;
+						if(H.getText().equals("O"))
+							cuenta1++;
+						if(I.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("F"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,F);
-						Pri = "";
-						quitada = 5;
+						if(C.getText().equals("O"))
+							cuenta1++;
+						if(I.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(D.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("G"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,G);
-						Pri = "";
-						quitada = 6;
+						if(A.getText().equals("O"))
+							cuenta1++;
+						if(D.getText().equals("O"))
+							cuenta1++;
+						if(H.getText().equals("O"))
+							cuenta1++;
+						if(I.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(C.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("H"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,H);
-						Pri = "";
-						quitada = 7;
+						if(G.getText().equals("O"))
+							cuenta1++;
+						if(I.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
+						if(B.getText().equals("O"))
+							cuenta1++;
 					}
 					if(Pri.equals("I"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,I);
-						Pri = "";
-						quitada = 8;
+						if(C.getText().equals("O"))
+							cuenta1++;
+						if(F.getText().equals("O"))
+							cuenta1++;
+						if(H.getText().equals("O"))
+							cuenta1++;
+						if(G.getText().equals("O"))
+							cuenta1++;
+						if(A.getText().equals("O"))
+							cuenta1++;
+						if(E.getText().equals("O"))
+							cuenta1++;
 					}
-					
-				}
-				if(resultado == 1)
-				{
 					if(Sec.equals("A"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,A);
-						Sec = "";
-						quitada = 0;
+						if(B.getText().equals("O"))
+							cuenta2++;
+						if(C.getText().equals("O"))
+							cuenta2++;
+						if(D.getText().equals("O"))
+							cuenta2++;
+						if(G.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(I.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("B"))
 					{	
-						PintaVacia(A,B,C,D,E,F,G,H,I,B);
-						Sec = "";
-						quitada = 1;
+						if(A.getText().equals("O"))
+							cuenta2++;
+						if(C.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(H.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("C"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,C);
-						Sec = "";
-						quitada = 2;
+						if(B.getText().equals("O"))
+							cuenta2++;
+						if(A.getText().equals("O"))
+							cuenta2++;
+						if(F.getText().equals("O"))
+							cuenta2++;
+						if(I.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(G.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("D"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,D);
-						Sec = "";
-						quitada = 3;
+						if(A.getText().equals("O"))
+							cuenta2++;
+						if(G.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(F.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("E"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,E);
-						Sec = "";
-						quitada = 4;
+						if(A.getText().equals("O"))
+							cuenta2++;
+						if(B.getText().equals("O"))
+							cuenta2++;
+						if(C.getText().equals("O"))
+							cuenta2++;
+						if(D.getText().equals("O"))
+							cuenta2++;
+						if(F.getText().equals("O"))
+							cuenta2++;
+						if(G.getText().equals("O"))
+							cuenta2++;
+						if(H.getText().equals("O"))
+							cuenta2++;
+						if(I.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("F"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,F);
-						Sec = "";
-						quitada = 5;
+						if(C.getText().equals("O"))
+							cuenta2++;
+						if(I.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(D.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("G"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,G);
-						Sec = "";
-						quitada = 6;
+						if(A.getText().equals("O"))
+							cuenta2++;
+						if(D.getText().equals("O"))
+							cuenta2++;
+						if(H.getText().equals("O"))
+							cuenta2++;
+						if(I.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(C.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("H"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,H);
-						Sec = "";
-						quitada = 7;
+						if(G.getText().equals("O"))
+							cuenta2++;
+						if(I.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
+						if(B.getText().equals("O"))
+							cuenta2++;
 					}
 					if(Sec.equals("I"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,I);
-						Sec = "";
-						quitada = 8;
+						if(C.getText().equals("O"))
+							cuenta2++;
+						if(F.getText().equals("O"))
+							cuenta2++;
+						if(H.getText().equals("O"))
+							cuenta2++;
+						if(G.getText().equals("O"))
+							cuenta2++;
+						if(A.getText().equals("O"))
+							cuenta2++;
+						if(E.getText().equals("O"))
+							cuenta2++;
 					}
-					
-				}
-				if(resultado == 2)
-				{
 					if(Ter.equals("A"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,A);
-						Ter = "";
-						quitada = 0;
+						if(B.getText().equals("O"))
+							cuenta3++;
+						if(C.getText().equals("O"))
+							cuenta3++;
+						if(D.getText().equals("O"))
+							cuenta3++;
+						if(G.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(I.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("B"))
 					{	
-						PintaVacia(A,B,C,D,E,F,G,H,I,B);
-						Ter = "";
-						quitada = 1;
+						if(A.getText().equals("O"))
+							cuenta3++;
+						if(C.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(H.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("C"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,C);
-						Ter = "";
-						quitada = 2;
+						if(B.getText().equals("O"))
+							cuenta3++;
+						if(A.getText().equals("O"))
+							cuenta3++;
+						if(F.getText().equals("O"))
+							cuenta3++;
+						if(I.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(G.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("D"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,D);
-						Ter = "";
-						quitada = 3;
+						if(A.getText().equals("O"))
+							cuenta3++;
+						if(G.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(F.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("E"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,E);
-						Ter = "";
-						quitada = 4;
+						if(A.getText().equals("O"))
+							cuenta3++;
+						if(B.getText().equals("O"))
+							cuenta3++;
+						if(C.getText().equals("O"))
+							cuenta3++;
+						if(D.getText().equals("O"))
+							cuenta3++;
+						if(F.getText().equals("O"))
+							cuenta3++;
+						if(G.getText().equals("O"))
+							cuenta3++;
+						if(H.getText().equals("O"))
+							cuenta3++;
+						if(I.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("F"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,F);
-						Ter = "";
-						quitada = 5;
+						if(C.getText().equals("O"))
+							cuenta3++;
+						if(I.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(D.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("G"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,G);
-						Ter = "";
-						quitada = 6;
+						if(A.getText().equals("O"))
+							cuenta3++;
+						if(D.getText().equals("O"))
+							cuenta3++;
+						if(H.getText().equals("O"))
+							cuenta3++;
+						if(I.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(C.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("H"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,H);
-						Ter = "";
-						quitada = 7;
+						if(G.getText().equals("O"))
+							cuenta3++;
+						if(I.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
+						if(B.getText().equals("O"))
+							cuenta3++;
 					}
 					if(Ter.equals("I"))
 					{
-						PintaVacia(A,B,C,D,E,F,G,H,I,I);
-						Ter = "";
-						quitada = 8;
+						if(C.getText().equals("O"))
+							cuenta3++;
+						if(F.getText().equals("O"))
+							cuenta3++;
+						if(H.getText().equals("O"))
+							cuenta3++;
+						if(G.getText().equals("O"))
+							cuenta3++;
+						if(A.getText().equals("O"))
+							cuenta3++;
+						if(E.getText().equals("O"))
+							cuenta3++;
 					}
-					
-				}
+				 Log.v("cuentas","cuenta1:"+cuenta1+" cuenta2:"+cuenta2+" cuenta3:"+cuenta3);
+					if(cuenta1<cuenta2 && cuenta1<cuenta3)
+					{
+						Log.v("Quitando","Quitando la primera puesta");
+						cuenta1=0;
+						cuenta2=0;
+						cuenta3=0;
+						if(Pri.equals("A"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,A);
+							Pri = "";
+							quitada = 0;
+						}
+						if(Pri.equals("B"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,B);
+							Pri = "";
+							quitada = 1;
+						}
+						if(Pri.equals("C"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,C);
+							Pri = "";
+							quitada = 2;
+						}
+						if(Pri.equals("D"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,D);
+							Pri = "";
+							quitada = 3;
+						}
+						if(Pri.equals("E"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,E);
+							Pri = "";
+							quitada = 4;
+						}
+						if(Pri.equals("F"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,F);
+							Pri = "";
+							quitada = 5;
+						}
+						if(Pri.equals("G"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,G);
+							Pri = "";
+							quitada = 6;
+						}
+						if(Pri.equals("H"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,H);
+							Pri = "";
+							quitada = 7;
+						}
+						if(Pri.equals("I"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,I);
+							Pri = "";
+							quitada = 8;
+						}
+					}
+					else if(cuenta2<cuenta1 && cuenta2<cuenta3)
+					{
+						Log.v("Quitando","Quitando la segunda puesta");
+						cuenta1=0;
+						cuenta2=0;
+						cuenta3=0;
+						if(Sec.equals("A"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,A);
+							Sec = "";
+							quitada = 0;
+						}
+						if(Sec.equals("B"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,B);
+							Sec = "";
+							quitada = 1;
+						}
+						if(Sec.equals("C"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,C);
+							Sec = "";
+							quitada = 2;
+						}
+						if(Sec.equals("D"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,D);
+							Sec = "";
+							quitada = 3;
+						}
+						if(Sec.equals("E"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,E);
+							Sec = "";
+							quitada = 4;
+						}
+						if(Sec.equals("F"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,F);
+							Sec = "";
+							quitada = 5;
+						}
+						if(Sec.equals("G"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,G);
+							Sec = "";
+							quitada = 6;
+						}
+						if(Sec.equals("H"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,H);
+							Sec = "";
+							quitada = 7;
+						}
+						if(Sec.equals("I"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,I);
+							Sec = "";
+							quitada = 8;
+						}
+					}
+					else if(cuenta3<cuenta1 && cuenta3<cuenta2)
+					{
+						Log.v("Quitando","Quitando la tercera puesta");
+						cuenta1=0;
+						cuenta2=0;
+						cuenta3=0;
+						if(Ter.equals("A"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,A);
+							Ter = "";
+							quitada = 0;
+						}
+						if(Ter.equals("B"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,B);
+							Ter = "";
+							quitada = 1;
+						}
+						if(Ter.equals("C"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,C);
+							Ter = "";
+							quitada = 2;
+						}
+						if(Ter.equals("D"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,D);
+							Ter = "";
+							quitada = 3;
+						}
+						if(Ter.equals("E"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,E);
+							Ter = "";
+							quitada = 4;
+						}
+						if(Ter.equals("F"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,F);
+							Ter = "";
+							quitada = 5;
+						}
+						if(Ter.equals("G"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,G);
+							Ter = "";
+							quitada = 6;
+						}
+						if(Ter.equals("H"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,H);
+							Ter = "";
+							quitada = 7;
+						}
+						if(Ter.equals("I"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,I);
+							Ter = "";
+							quitada = 8;
+						}
+					}else{
+						Log.v("Quitando","Quitando la primera puesta(por defecto)");
+						cuenta1=0;
+						cuenta2=0;
+						cuenta3=0;
+						if(Pri.equals("A"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,A);
+							Pri = "";
+							quitada = 0;
+						}
+						if(Pri.equals("B"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,B);
+							Pri = "";
+							quitada = 1;
+						}
+						if(Pri.equals("C"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,C);
+							Pri = "";
+							quitada = 2;
+						}
+						if(Pri.equals("D"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,D);
+							Pri = "";
+							quitada = 3;
+						}
+						if(Pri.equals("E"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,E);
+							Pri = "";
+							quitada = 4;
+						}
+						if(Pri.equals("F"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,F);
+							Pri = "";
+							quitada = 5;
+						}
+						if(Pri.equals("G"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,G);
+							Pri = "";
+							quitada = 6;
+						}
+						if(Pri.equals("H"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,H);
+							Pri = "";
+							quitada = 7;
+						}
+						if(Pri.equals("I"))
+						{
+							PintaVacia(A,B,C,D,E,F,G,H,I,I);
+							Pri = "";
+							quitada = 8;
+						}
+					}
 			}
 		///LO QUE HACE ANTES DE TENER LAS 3 FICHAS
 			if(OUsadas<3)//colocar ficha ganadora

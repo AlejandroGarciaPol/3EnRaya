@@ -20,3 +20,5 @@
 
 [7/5/2013][1hora]   Optimización del codigo en las clases CPU y Multijugador,aplicando el control de botones unico tambien a Multijugador
 	            y aprovechando el array de botones para optimizar codigo en varios metodos de ambas clases, haciendolo más corto.
+
+[13/5/2013][3horas] Mejoras en la IA.
