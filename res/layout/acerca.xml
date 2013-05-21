@@ -9,6 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Aplicacion realizada por Alejandro Garcia Pol - Todos los derechos reservados 2012(España-Valencia)" />
+        android:text="Aplicacion realizada por Alejandro Garcia Pol como proyecto de fin de curso en Desarrollo de Aplicaciones Multiplataforma, para el instituto IES Serpis de Valencia." />
 
 </RelativeLayout>

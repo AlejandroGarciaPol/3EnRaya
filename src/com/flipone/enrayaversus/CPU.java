@@ -16,6 +16,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.AudioManager;
+import android.media.SoundPool;
 
 public class CPU extends Activity {
 	
@@ -46,10 +48,21 @@ public class CPU extends Activity {
     int vidas = 0;
     Button casillas[];
     int index = 0;
+    private static SoundPool sound;
+	private static int Put;
+	private static int Quit;
+	private static int Boo;
+	private static int Ova;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cpu);
+        
+		sound = new SoundPool(10,AudioManager.STREAM_MUSIC,0);
+		Quit = sound.load(this, R.raw.quit,1);
+		Put = sound.load(this, R.raw.put,1);
+		Boo = sound.load(this, R.raw.boo,1);
+		Ova = sound.load(this, R.raw.ova,1);
         
         casillas = new Button[] {
                 (Button)findViewById(R.id.Boton1),
@@ -192,18 +205,19 @@ public class CPU extends Activity {
 		{
     		if(!turno && ultimaO!=esta ||turno && ultimaX!=esta)
     		{
-    		if(pinta.equals("O"))
-    		{	
-    		Z.setTextColor(Color.parseColor("#8A0886"));
-    		}
-    		if(pinta.equals("X"))
-    		{	
-    		Z.setTextColor(Color.parseColor("#088A08"));
-    		}
-			Z.setText(pinta);
-			Z.setClickable(false);
-			SigueTurno = false;
-			CheckWin(A,B,C,D,E,F,G,H,I,again,ganador,XWins,OWins);
+    			if(pinta.equals("O"))
+    			{	
+    				Z.setTextColor(Color.parseColor("#8A0886"));
+    			}
+    			if(pinta.equals("X"))
+    			{	
+    				Z.setTextColor(Color.parseColor("#088A08"));
+    			}
+    			Z.setText(pinta);
+    			Z.setClickable(false);
+    			SigueTurno = false;
+    			CheckWin(A,B,C,D,E,F,G,H,I,again,ganador,XWins,OWins);
+    			sound.play(Put, 1.0f, 1.0f, 0, 0, 1.5f);
 		    }
     		else
     		{
@@ -214,7 +228,6 @@ public class CPU extends Activity {
     			SigueTurno = true;
     		}
 		}
-    	
     }
     public void PintaVacia(Button A,Button B,Button C,Button D,Button E,Button F,Button G,Button H,Button I,Button Z)
     {
@@ -228,6 +241,7 @@ public class CPU extends Activity {
 					Z.setText("");
 					OUsadas--;
 	    			DisableO(A,B,C,D,E,F,G,H,I);
+	    			sound.play(Quit, 1.0f, 1.0f, 0, 0, 1.5f);
 				}
 			}
 		}
@@ -241,10 +255,10 @@ public class CPU extends Activity {
 					Z.setText("");
 					XUsadas=XUsadas-2;
 	    			DisableX(A,B,C,D,E,F,G,H,I);
+	    			sound.play(Quit, 1.0f, 1.0f, 0, 0, 1.5f);
 				}
 			}
 		}
-    	
     }
      
     public void ChangeTurno(TextView jugador)
@@ -448,6 +462,7 @@ public class CPU extends Activity {
             LevelsManager(XWins,OWins);
             puntos = puntos +150;
             Puntos.setText(""+puntos);
+            sound.play(Ova, 1.0f, 1.0f, 0, 0, 1.4f);
         }
         if(regla==2)
         {
@@ -461,6 +476,7 @@ public class CPU extends Activity {
             LevelsManager(XWins,OWins);
             puntos = puntos -200;
             Puntos.setText(""+puntos);
+            sound.play(Boo, 1.0f, 1.0f, 0, 0, 1f);
         }
     }
     public void DisableO(Button A,Button B,Button C,Button D,Button E,Button F,Button G,Button H,Button I)
