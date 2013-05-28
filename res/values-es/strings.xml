@@ -19,7 +19,7 @@
     <string name="Buscar">Buscar partidas</string>
     <string name="Crear">Crear partida</string>
     <string name="Atras">Menu principal</string>
-    <string name="Nombre">Alias</string>
+    <string name="Nombre">Nombre</string>
     <string name="NombrePartida">Partida</string>
     <string name="BotonCrear">Crear</string>
     <string name="Jugador1">Jugador1</string>
@@ -56,6 +56,8 @@
      <string name="twit2">puntos jugando al 3EnRaya para android, intenta superarme!</string>
      <string name="twit3">descarga: https://play.google.com/store/apps/developer?id=BBX+Enterprise.</string>
 	 <string name="twitc">puntos jugando al 3EnRaya para android ¡y me he pasado el juego!, intenta superarme!</string>
-    
+     <string name="savescore">Guardar Puntos</string>	
+	 <string name="savename">Guardar</string>	 
+	 <string name="puntuaciones">Mejores Puntuaciones</string>
 
 </resources>

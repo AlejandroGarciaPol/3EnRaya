@@ -20,7 +20,7 @@
     <string name="Buscar">Buscar partidas</string>
     <string name="Crear">Crear partida</string>
     <string name="Atras">Main Menu</string>
-    <string name="Nombre">Alias</string>
+    <string name="Nombre">Name</string>
     <string name="NombrePartida">Partida</string>
     <string name="BotonCrear">Crear</string>
     <string name="Jugador1">Jugador1</string>
@@ -57,6 +57,11 @@
     <string name="twit">Ive just made</string>
     <string name="twit2">points playing 3TacToe for android, try to beat my score!</string>
     <string name="twit3">download: https://play.google.com/store/apps/developer?id=BBX+Enterprise.</string>
-   	<string name="twitc">points playing 3TacToe for android android ¡and I beated the game!, try to beat me!</string>
+    <string name="twitc">points playing 3TacToe for android android ¡and I beated the game!, try to beat me!</string>
+    <string name="savescore">Save Score</string>
+    <string name="title_activity_guardar_puntos">GuardarPuntos</string>
+    <string name="savename">Save</string>
+    <string name="title_activity_score">Score</string>
+    <string name="puntuaciones">Best Players</string>
 
 </resources>

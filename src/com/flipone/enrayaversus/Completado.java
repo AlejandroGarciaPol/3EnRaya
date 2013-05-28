@@ -17,6 +17,7 @@ public class Completado extends Activity {
 		
 		final TextView score = (TextView)findViewById(R.id.textView7);
 		final Button share2 = (Button)findViewById(R.id.button1);
+		final Button goSave2 = (Button)findViewById(R.id.goSaveScreen2);
 		
 		final Bundle b = getIntent().getExtras();
 		score.setText(""+b.getInt("SCORE"));
@@ -31,6 +32,16 @@ public class Completado extends Activity {
 				sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,getResources().getString(R.string.twit)+" "+ b.getInt("SCORE") +" "+ getResources().getString(R.string.twitc) +" "+ getResources().getString(R.string.twit3));
 				sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "TicTacToe");
 				startActivity(Intent.createChooser(sharingIntent, null));
+				
+			}
+		});
+		
+		goSave2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent goSaveIntent = new Intent(Completado.this,GuardarPuntosActivity.class);
+				startActivity(goSaveIntent);
 				
 			}
 		});

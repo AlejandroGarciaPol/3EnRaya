@@ -99,4 +99,12 @@
         android:layout_toRightOf="@+id/textView7"
         android:text="@string/guardar" />
 
+    <Button
+        android:id="@+id/goSaveScreen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/savescore" />
+
 </RelativeLayout>
