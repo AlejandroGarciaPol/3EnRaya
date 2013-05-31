@@ -3,11 +3,15 @@ package com.flipone.enrayaversus;
 import java.util.ArrayList;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 
 public class Score extends Activity {
 	
@@ -59,7 +63,25 @@ public class Score extends Activity {
 		
 		final ListView lv = (ListView)findViewById(R.id.listView1);
 		
-		ArrayAdapter<Persona> adapter = new ArrayAdapter<Persona>(this,android.R.layout.simple_list_item_1, lista);
+		ArrayAdapter<Persona> adapter = new ArrayAdapter<Persona>(this,android.R.layout.simple_list_item_1, lista){
+
+	        @Override
+	        public View getView(int position, View convertView,
+	                ViewGroup parent) {
+	            View view =super.getView(position, convertView, parent);
+
+	            TextView textView=(TextView) view.findViewById(android.R.id.text1);
+	            //ListView listView=(ListView) view.findViewById(android.R.id.list);
+
+	            textView.setTextColor(Color.parseColor("#40FF00"));
+	            //listView.setBackgroundColor(Color.parseColor("#000000"));
+	            
+	            return view;
+	        }
+	    };
+		
+		
+		
 		lv.setAdapter(adapter);
 	}
 }
