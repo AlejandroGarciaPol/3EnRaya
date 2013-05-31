@@ -41,6 +41,9 @@ public class Completado extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent goSaveIntent = new Intent(Completado.this,GuardarPuntosActivity.class);
+				Bundle bun = new Bundle();
+				bun.putInt("score",b.getInt("SCORE"));
+				goSaveIntent.putExtras(bun);
 				startActivity(goSaveIntent);
 				
 			}

@@ -36,11 +36,12 @@ public final class R {
         public static final int goSaveScreen=0x7f080028;
         public static final int goSaveScreen2=0x7f08000c;
         public static final int listView1=0x7f080005;
-        public static final int menu_settings=0x7f08002b;
+        public static final int menu_settings=0x7f08002c;
         public static final int relativeLayout1=0x7f08000d;
         public static final int saveName=0x7f080029;
         public static final int score=0x7f080024;
         public static final int score2=0x7f080026;
+        public static final int scoresee=0x7f08002b;
         public static final int share=0x7f080027;
         public static final int tableLayout1=0x7f08000e;
         public static final int tableLayout2=0x7f08001c;

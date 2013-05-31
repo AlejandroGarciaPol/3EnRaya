@@ -2,18 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     tools:context=".Score" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/puntuaciones"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#40FF00" />
 
     <ListView
         android:id="@+id/listView1"

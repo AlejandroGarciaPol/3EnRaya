@@ -42,6 +42,9 @@ public class GameOver extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent goSaveIntent = new Intent(GameOver.this,GuardarPuntosActivity.class);
+				Bundle bund = new Bundle();
+				bund.putInt("score",b.getInt("SCORE"));
+				goSaveIntent.putExtras(bund);
 				startActivity(goSaveIntent);
 				
 			}
