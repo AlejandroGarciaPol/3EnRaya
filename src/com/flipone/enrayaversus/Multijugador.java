@@ -33,6 +33,7 @@ public class Multijugador extends Activity {
 	private static int Put;
 	private static int Quit;
 	private static int Ova;
+	private static int Err;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class Multijugador extends Activity {
 		Quit = sound.load(this, R.raw.quit,1);
 		Put = sound.load(this, R.raw.put,1);
 		Ova = sound.load(this, R.raw.ova,1);
+		Err = sound.load(this,R.raw.err,1);
         
         casillas = new Button[] {
                 (Button)findViewById(R.id.Boton1),
@@ -180,6 +182,7 @@ public class Multijugador extends Activity {
     		{
             	Debe_Contar = false;
     			Context context = getApplicationContext();
+    			sound.play(Err, 1.0f, 1.0f, 0, 0, 1.4f);
     			int duration = Toast.LENGTH_SHORT;
     			Toast.makeText(context,getResources().getString(R.string.NoRepite), duration).show();
     			SigueTurno = true;

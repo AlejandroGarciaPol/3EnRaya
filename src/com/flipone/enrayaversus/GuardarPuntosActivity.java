@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class GuardarPuntosActivity extends Activity {
@@ -30,23 +29,6 @@ public class GuardarPuntosActivity extends Activity {
 		scoresee.setText(""+b.getInt("score"));
 		
 		final UsuariosSQLiteHelper usdbh = new UsuariosSQLiteHelper(this, "DBpuntos", null, 1);
-        
-        	final SQLiteDatabase db = usdbh.getWritableDatabase();
-        
-        
-        	if(db != null)
-        	{
-        		Cursor c = db.rawQuery(" SELECT * FROM score ", null);
-        		c.moveToFirst();
-
-        		if (c.moveToFirst()) {
-        			do {
-
-        			} while(c.moveToNext());
-        		}
-        	db.close();
-        	
-        }
         	
         	SaveName.setOnClickListener(new OnClickListener() {
     			

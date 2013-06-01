@@ -53,6 +53,7 @@ public class CPU extends Activity {
 	private static int Quit;
 	private static int Boo;
 	private static int Ova;
+	private static int Err;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +64,7 @@ public class CPU extends Activity {
 		Put = sound.load(this, R.raw.put,1);
 		Boo = sound.load(this, R.raw.boo,1);
 		Ova = sound.load(this, R.raw.ova,1);
+		Err = sound.load(this,R.raw.err,1);
         
         casillas = new Button[] {
                 (Button)findViewById(R.id.Boton1),
@@ -223,6 +225,7 @@ public class CPU extends Activity {
     		{
             	Debe_Contar = false;
     			Context context = getApplicationContext();
+    			sound.play(Err, 1.0f, 1.0f, 0, 0, 1.4f);
     			int duration = Toast.LENGTH_SHORT;
     			Toast.makeText(context,getResources().getString(R.string.NoRepite), duration).show();
     			SigueTurno = true;

@@ -15,51 +15,52 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int Boton1=0x7f080010;
-        public static final int Boton2=0x7f080011;
-        public static final int Boton3=0x7f080012;
-        public static final int Boton4=0x7f080014;
-        public static final int Boton5=0x7f080015;
-        public static final int Boton6=0x7f080016;
-        public static final int Boton7=0x7f080018;
-        public static final int Boton8=0x7f080019;
-        public static final int Boton9=0x7f08001a;
-        public static final int NameInput=0x7f08002a;
-        public static final int OWins=0x7f080021;
-        public static final int TextView01=0x7f080020;
-        public static final int XWins=0x7f08001e;
+        public static final int Boton1=0x7f080011;
+        public static final int Boton2=0x7f080012;
+        public static final int Boton3=0x7f080013;
+        public static final int Boton4=0x7f080015;
+        public static final int Boton5=0x7f080016;
+        public static final int Boton6=0x7f080017;
+        public static final int Boton7=0x7f080019;
+        public static final int Boton8=0x7f08001a;
+        public static final int Boton9=0x7f08001b;
+        public static final int NameInput=0x7f08002b;
+        public static final int OWins=0x7f080022;
+        public static final int TextView01=0x7f080021;
+        public static final int XWins=0x7f08001f;
         public static final int acercade=0x7f080001;
-        public static final int again=0x7f08001b;
+        public static final int again=0x7f08001c;
         public static final int button1=0x7f080002;
         public static final int button2=0x7f080003;
         public static final int button4=0x7f080004;
-        public static final int goSaveScreen=0x7f080028;
-        public static final int goSaveScreen2=0x7f08000c;
-        public static final int listView1=0x7f080005;
-        public static final int menu_settings=0x7f08002c;
-        public static final int relativeLayout1=0x7f08000d;
-        public static final int saveName=0x7f080029;
-        public static final int score=0x7f080024;
-        public static final int score2=0x7f080026;
-        public static final int scoresee=0x7f08002b;
-        public static final int share=0x7f080027;
-        public static final int tableLayout1=0x7f08000e;
-        public static final int tableLayout2=0x7f08001c;
-        public static final int tableRow1=0x7f08000f;
-        public static final int tableRow2=0x7f080013;
-        public static final int tableRow3=0x7f080017;
-        public static final int tableRow5=0x7f08001d;
-        public static final int tableRow6=0x7f08001f;
-        public static final int tableRow7=0x7f080022;
-        public static final int tableRow8=0x7f080023;
+        public static final int goSaveScreen=0x7f080029;
+        public static final int goSaveScreen2=0x7f08000d;
+        public static final int listView1=0x7f080006;
+        public static final int menu_settings=0x7f08002d;
+        public static final int relativeLayout1=0x7f08000e;
+        public static final int saveName=0x7f08002a;
+        public static final int score=0x7f080025;
+        public static final int score2=0x7f080027;
+        public static final int scoresee=0x7f08002c;
+        public static final int share=0x7f080028;
+        public static final int tableLayout1=0x7f08000f;
+        public static final int tableLayout2=0x7f08001d;
+        public static final int tableRow1=0x7f080010;
+        public static final int tableRow2=0x7f080014;
+        public static final int tableRow3=0x7f080018;
+        public static final int tableRow5=0x7f08001e;
+        public static final int tableRow6=0x7f080020;
+        public static final int tableRow7=0x7f080023;
+        public static final int tableRow8=0x7f080024;
         public static final int textView1=0x7f080000;
-        public static final int textView2=0x7f080006;
-        public static final int textView3=0x7f080007;
-        public static final int textView4=0x7f080009;
-        public static final int textView5=0x7f080008;
-        public static final int textView6=0x7f08000a;
-        public static final int textView7=0x7f08000b;
-        public static final int textView8=0x7f080025;
+        public static final int textView2=0x7f080007;
+        public static final int textView3=0x7f080008;
+        public static final int textView4=0x7f08000a;
+        public static final int textView5=0x7f080009;
+        public static final int textView6=0x7f08000b;
+        public static final int textView7=0x7f08000c;
+        public static final int textView8=0x7f080026;
+        public static final int title=0x7f080005;
     }
     public static final class layout {
         public static final int acerca=0x7f030000;
@@ -83,9 +84,10 @@ public final class R {
     }
     public static final class raw {
         public static final int boo=0x7f040000;
-        public static final int ova=0x7f040001;
-        public static final int put=0x7f040002;
-        public static final int quit=0x7f040003;
+        public static final int err=0x7f040001;
+        public static final int ova=0x7f040002;
+        public static final int put=0x7f040003;
+        public static final int quit=0x7f040004;
     }
     public static final class string {
         public static final int Acerca=0x7f05001f;

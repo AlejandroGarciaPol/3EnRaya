@@ -22,6 +22,8 @@ public class Score extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_score);
 		
+		lista.clear();//vaciamos el arraylist antes de llenarlo para evitar duplicidades
+		
 		final UsuariosSQLiteHelper usdbh = new UsuariosSQLiteHelper(this, "DBpuntos", null, 1);
 		
 		//rellenamos el arraylist con los resultados de la tabla
@@ -32,7 +34,6 @@ public class Score extends Activity {
         	c.moveToFirst();
         	if (c.moveToFirst()) {
         	     do {
-        	    	 //total = total + c.getString(1) + " " + c.getString(0)+ "\n";
         	    	 Persona p = new Persona(c.getString(1),c.getInt(0));
         	    	 lista.add(p);
         	     } while(c.moveToNext());
@@ -52,9 +53,9 @@ public class Score extends Activity {
     			{
     				aux = lista.get(i);
     				aux2 = lista.get(j);
-            		lista.remove(i);//testeo
-    				lista.add(i,aux2 );
-            		lista.remove(j);//testeo
+            		lista.remove(i);
+    				lista.add(i,aux2);
+            		lista.remove(j);
     				lista.add(j,aux);
     			}
     		}
@@ -66,15 +67,13 @@ public class Score extends Activity {
 		ArrayAdapter<Persona> adapter = new ArrayAdapter<Persona>(this,android.R.layout.simple_list_item_1, lista){
 
 	        @Override
-	        public View getView(int position, View convertView,
+	        public View getView(int position, View convertView,//stackoverflow
 	                ViewGroup parent) {
 	            View view =super.getView(position, convertView, parent);
 
 	            TextView textView=(TextView) view.findViewById(android.R.id.text1);
-	            //ListView listView=(ListView) view.findViewById(android.R.id.list);
 
 	            textView.setTextColor(Color.parseColor("#40FF00"));
-	            //listView.setBackgroundColor(Color.parseColor("#000000"));
 	            
 	            return view;
 	        }
